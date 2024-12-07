@@ -3,18 +3,20 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: CJYKK博客
+avatar: https://files.cjykk.top/blog/icon/avatar.jpg
+favicon: https://files.cjykk.top/blog/icon/favicon.jpg
+subtitle: '~ 从此在皮的路上一去不复返 ~'
+description: '记录我的日常琐事，发布一些个人汉化的软件'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: CJYKK
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://blog.cjykk.top
+permalink: posts/:abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -65,7 +67,7 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: 未分类
 category_map:
 tag_map:
 
@@ -96,9 +98,26 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: stellar
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Feed Configuration
+## Docs: https://github.com/sergeyzwezdin/hexo-feed
+feed:
+    limit: 20
+    order_by: "-date"
+    tag_dir: "tag"
+    category_dir: "category"
+    rss:
+        enable: true
+        output: "rss.xml"
+    atom:
+        enable: true
+        output: "atom.xml"
+    jsonFeed:
+        enable: true
+        output: "feed.json"

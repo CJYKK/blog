@@ -1,0 +1,47 @@
+open_graph:
+  enable: true
+article:
+  type: tech
+  auto_cover: true
+  auto_excerpt: 100
+  related_posts:
+    enable: true
+    title: 相关推荐
+  license: '本文由CJYKK编写，采用[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)许可协议，转载请注明出处。'
+  share: 
+    - wechat
+    - weibo
+    - email
+    - link
+logo:
+  subtitle: '~ 从此在皮的路上一去不复返 ~ | 有时候，我会想念过去的时光。'
+search:
+  service: local_search
+  local_search:
+    field: all
+    path: /search.json
+    content: true
+    codeblock: true
+footer:
+  social:
+    telegram:
+      icon: '<img src="https://files.cjykk.top/blog/icon/social/telegram.svg"/>'
+      url: https://t.me/CJYKK
+    github:
+      icon: '<img src="https://files.cjykk.top/blog/icon/social/github.svg"/>'
+      url: https://github.com/CJYKK
+    mail:
+      icon: '<img src="https://files.cjykk.top/blog/icon/social/mail.svg"/>'
+      url: mailto:admin@cjykk.top
+    feed:
+      icon: '<img src="https://files.cjykk.top/blog/icon/social/feed.svg"/>'
+      url: /atom.xml
+comments:
+  service: twikoo
+  twikoo:
+    js: https://gcore.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js
+    envId: https://blog.twikoo.cjykk.top/.netlify/functions/twikoo
+site_tree:
+  index_blog:
+    nav_tabs:
+      '关于': /about/
